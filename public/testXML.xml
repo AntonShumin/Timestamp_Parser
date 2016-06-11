@@ -1,0 +1,1345 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<RECORDS>
+   <RECORD>
+      <LastMinuteID>497179</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/11/2016 1:00:00 PM</StartTime>
+      <EndTime>6/11/2016 4:00:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>135</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/11/2016 10:51:40 AM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=497179&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>498048</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/13/2016 3:00:00 PM</StartTime>
+      <EndTime>6/13/2016 6:00:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>140</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/11/2016 8:46:33 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=498048&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>498015</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/12/2016 4:00:00 PM</StartTime>
+      <EndTime>6/12/2016 7:00:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/11/2016 12:59:06 AM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=498015&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495800</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/19/2016 9:00:00 AM</StartTime>
+      <EndTime>6/19/2016 12:00:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/10/2016 10:30:39 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495800&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>497183</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/12/2016 4:00:00 PM</StartTime>
+      <EndTime>6/12/2016 7:00:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>140</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/10/2016 9:38:06 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=497183&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>479265</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/11/2016 5:00:00 PM</StartTime>
+      <EndTime>6/11/2016 8:00:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>135</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/10/2016 8:13:34 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=479265&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>496465</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/15/2016 1:30:00 PM</StartTime>
+      <EndTime>6/15/2016 3:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/10/2016 5:49:23 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=496465&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>496814</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/11/2016 9:30:00 AM</StartTime>
+      <EndTime>6/11/2016 12:30:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>165</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/10/2016 3:34:36 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=496814&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>492517</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/12/2016 12:30:00 PM</StartTime>
+      <EndTime>6/12/2016 3:30:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>140</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/10/2016 11:02:38 AM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=492517&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>497777</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/14/2016 12:30:00 PM</StartTime>
+      <EndTime>6/14/2016 2:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/10/2016 10:15:12 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=497777&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495754</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/14/2016 6:00:00 PM</StartTime>
+      <EndTime>6/14/2016 9:00:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/10/2016 10:14:51 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495754&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495750</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/14/2016 1:00:00 PM</StartTime>
+      <EndTime>6/14/2016 3:00:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/10/2016 10:13:48 AM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495750&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495744</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/13/2016 3:00:00 PM</StartTime>
+      <EndTime>6/13/2016 6:00:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>140</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/9/2016 8:22:43 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495744&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>492515</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/12/2016 4:30:00 PM</StartTime>
+      <EndTime>6/12/2016 7:30:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>140</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/9/2016 7:46:08 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=492515&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>491720</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/12/2016 7:30:00 PM</StartTime>
+      <EndTime>6/12/2016 10:30:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>140</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/9/2016 7:40:55 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=491720&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495845</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/24/2016 7:00:00 PM</StartTime>
+      <EndTime>6/24/2016 9:00:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/9/2016 6:55:21 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495845&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495124</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/12/2016 8:00:00 PM</StartTime>
+      <EndTime>6/12/2016 11:00:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>140</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/9/2016 1:28:01 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495124&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495137</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/13/2016 4:30:00 PM</StartTime>
+      <EndTime>6/13/2016 6:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>100</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/9/2016 10:42:52 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495137&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495138</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/13/2016 12:30:00 PM</StartTime>
+      <EndTime>6/13/2016 2:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>100</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/9/2016 10:42:43 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495138&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>497362</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/13/2016 9:30:00 AM</StartTime>
+      <EndTime>6/13/2016 12:30:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>165</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/9/2016 10:42:32 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=497362&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495283</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/13/2016 9:00:00 AM</StartTime>
+      <EndTime>6/13/2016 12:00:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>165</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/9/2016 10:42:19 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495283&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>479266</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/11/2016 3:30:00 PM</StartTime>
+      <EndTime>6/11/2016 5:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>100</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/9/2016 10:40:05 AM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=479266&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>492434</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/11/2016 12:30:00 PM</StartTime>
+      <EndTime>6/11/2016 2:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>100</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/9/2016 10:39:33 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=492434&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>497192</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/27/2016 12:30:00 PM</StartTime>
+      <EndTime>6/27/2016 2:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/8/2016 7:54:03 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=497192&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495876</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/27/2016 1:00:00 PM</StartTime>
+      <EndTime>6/27/2016 3:00:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/8/2016 7:53:43 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495876&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>497187</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/17/2016 9:30:00 AM</StartTime>
+      <EndTime>6/17/2016 12:30:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/8/2016 7:14:09 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=497187&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>497186</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/15/2016 4:00:00 PM</StartTime>
+      <EndTime>6/15/2016 6:00:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/8/2016 7:13:31 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=497186&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>497185</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/15/2016 10:30:00 AM</StartTime>
+      <EndTime>6/15/2016 1:30:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/8/2016 7:13:13 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=497185&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>493358</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/12/2016 9:30:00 AM</StartTime>
+      <EndTime>6/12/2016 12:30:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/8/2016 2:20:43 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=493358&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>492425</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/11/2016 9:00:00 AM</StartTime>
+      <EndTime>6/11/2016 12:00:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/7/2016 5:14:05 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=492425&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495764</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/15/2016 3:30:00 PM</StartTime>
+      <EndTime>6/15/2016 6:30:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/7/2016 4:34:19 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495764&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495761</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/15/2016 1:00:00 PM</StartTime>
+      <EndTime>6/15/2016 3:00:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/7/2016 4:34:13 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495761&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>493705</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/11/2016 3:00:00 PM</StartTime>
+      <EndTime>6/11/2016 6:00:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/7/2016 4:08:49 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=493705&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>496642</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/21/2016 9:30:00 PM</StartTime>
+      <EndTime>6/21/2016 11:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/7/2016 3:22:09 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=496642&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>496641</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/20/2016 3:00:00 PM</StartTime>
+      <EndTime>6/20/2016 6:00:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/7/2016 3:21:43 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=496641&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>496640</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/24/2016 12:30:00 PM</StartTime>
+      <EndTime>6/24/2016 2:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/7/2016 3:21:22 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=496640&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>496630</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/19/2016 4:00:00 PM</StartTime>
+      <EndTime>6/19/2016 7:00:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/7/2016 3:13:21 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=496630&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495746</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/14/2016 9:30:00 AM</StartTime>
+      <EndTime>6/14/2016 12:30:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/7/2016 2:09:19 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495746&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495757</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/15/2016 9:00:00 AM</StartTime>
+      <EndTime>6/15/2016 12:00:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/7/2016 11:29:16 AM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495757&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>496339</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/29/2016 3:30:00 PM</StartTime>
+      <EndTime>6/29/2016 5:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/7/2016 8:43:40 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=496339&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495896</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/29/2016 3:30:00 PM</StartTime>
+      <EndTime>6/29/2016 6:30:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/7/2016 8:41:50 AM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495896&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495780</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/17/2016 9:00:00 AM</StartTime>
+      <EndTime>6/17/2016 12:00:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/6/2016 9:31:28 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495780&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495805</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/19/2016 4:30:00 PM</StartTime>
+      <EndTime>6/19/2016 7:30:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 9:15:25 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495805&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495901</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/29/2016 9:00:00 PM</StartTime>
+      <EndTime>6/30/2016</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 12:15:17 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495901&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495898</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/29/2016 6:30:00 PM</StartTime>
+      <EndTime>6/29/2016 8:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 12:14:58 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495898&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495895</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/29/2016 12:30:00 PM</StartTime>
+      <EndTime>6/29/2016 2:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 12:14:12 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495895&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495894</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/29/2016 9:30:00 AM</StartTime>
+      <EndTime>6/29/2016 12:30:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/6/2016 12:13:55 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495894&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495893</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/28/2016 9:00:00 PM</StartTime>
+      <EndTime>6/29/2016</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 12:13:40 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495893&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495892</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/28/2016 7:00:00 PM</StartTime>
+      <EndTime>6/28/2016 9:00:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 12:13:26 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495892&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495891</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/28/2016 3:30:00 PM</StartTime>
+      <EndTime>6/28/2016 6:30:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 12:13:09 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495891&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495890</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/28/2016 1:00:00 PM</StartTime>
+      <EndTime>6/28/2016 3:00:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 12:12:50 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495890&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495885</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/28/2016 9:00:00 AM</StartTime>
+      <EndTime>6/28/2016 12:00:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/6/2016 12:12:29 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495885&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495883</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/27/2016 9:30:00 PM</StartTime>
+      <EndTime>6/27/2016 11:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 12:12:12 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495883&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495881</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/27/2016 7:00:00 PM</StartTime>
+      <EndTime>6/27/2016 9:00:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 12:12:00 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495881&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495878</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/27/2016 3:00:00 PM</StartTime>
+      <EndTime>6/27/2016 6:00:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 12:11:30 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495878&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495875</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/27/2016 9:00:00 AM</StartTime>
+      <EndTime>6/27/2016 12:00:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/6/2016 12:10:55 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495875&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495872</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/26/2016 8:00:00 PM</StartTime>
+      <EndTime>6/26/2016 11:00:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 12:10:38 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495872&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495871</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/26/2016 4:30:00 PM</StartTime>
+      <EndTime>6/26/2016 7:30:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 12:10:25 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495871&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495868</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/26/2016 1:00:00 PM</StartTime>
+      <EndTime>6/26/2016 4:00:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 12:10:06 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495868&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495865</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/26/2016 9:00:00 AM</StartTime>
+      <EndTime>6/26/2016 12:00:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/6/2016 12:09:47 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495865&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495864</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/25/2016 9:30:00 PM</StartTime>
+      <EndTime>6/25/2016 11:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 12:09:31 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495864&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495863</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/25/2016 6:30:00 PM</StartTime>
+      <EndTime>6/25/2016 8:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 12:09:15 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495863&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495861</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/25/2016 3:30:00 PM</StartTime>
+      <EndTime>6/25/2016 6:30:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 12:08:57 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495861&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495858</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/25/2016 1:00:00 PM</StartTime>
+      <EndTime>6/25/2016 3:00:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 12:08:38 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495858&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495854</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/25/2016 9:00:00 AM</StartTime>
+      <EndTime>6/25/2016 12:00:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/6/2016 12:08:11 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495854&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495848</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/24/2016 9:00:00 PM</StartTime>
+      <EndTime>6/25/2016</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 12:07:53 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495848&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495842</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/24/2016 3:00:00 PM</StartTime>
+      <EndTime>6/24/2016 6:00:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 12:07:17 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495842&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495837</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/24/2016 1:00:00 PM</StartTime>
+      <EndTime>6/24/2016 3:00:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 12:06:57 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495837&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495835</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/24/2016 9:30:00 AM</StartTime>
+      <EndTime>6/24/2016 12:30:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/6/2016 12:06:40 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495835&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495831</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/21/2016 9:00:00 PM</StartTime>
+      <EndTime>6/22/2016</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 12:06:13 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495831&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495827</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/21/2016 6:30:00 PM</StartTime>
+      <EndTime>6/21/2016 8:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 12:05:56 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495827&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495824</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/21/2016 3:30:00 PM</StartTime>
+      <EndTime>6/21/2016 6:30:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 12:05:35 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495824&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495822</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/21/2016 1:00:00 PM</StartTime>
+      <EndTime>6/21/2016 3:00:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 12:05:13 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495822&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495821</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/21/2016 9:00:00 AM</StartTime>
+      <EndTime>6/21/2016 12:00:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/6/2016 12:04:53 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495821&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495820</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/20/2016 9:00:00 PM</StartTime>
+      <EndTime>6/21/2016</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 12:04:38 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495820&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495819</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/20/2016 7:00:00 PM</StartTime>
+      <EndTime>6/20/2016 9:00:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 12:04:20 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495819&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495818</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/20/2016 3:30:00 PM</StartTime>
+      <EndTime>6/20/2016 6:30:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 12:03:58 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495818&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495816</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/20/2016 1:00:00 PM</StartTime>
+      <EndTime>6/20/2016 3:00:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 12:03:37 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495816&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495814</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/20/2016 9:00:00 AM</StartTime>
+      <EndTime>6/20/2016 12:00:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/6/2016 12:03:13 PM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495814&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495807</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/19/2016 8:00:00 PM</StartTime>
+      <EndTime>6/19/2016 11:00:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 11:59:17 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495807&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495803</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/19/2016 12:30:00 PM</StartTime>
+      <EndTime>6/19/2016 3:30:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 11:58:41 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495803&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495799</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/18/2016 9:30:00 PM</StartTime>
+      <EndTime>6/18/2016 11:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 11:57:45 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495799&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495798</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/18/2016 6:30:00 PM</StartTime>
+      <EndTime>6/18/2016 8:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 11:57:32 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495798&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495796</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/18/2016 3:30:00 PM</StartTime>
+      <EndTime>6/18/2016 6:30:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 11:57:14 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495796&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495793</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/18/2016 1:00:00 PM</StartTime>
+      <EndTime>6/18/2016 3:00:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 11:56:55 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495793&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495791</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/18/2016 9:00:00 AM</StartTime>
+      <EndTime>6/18/2016 12:00:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/6/2016 11:56:37 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495791&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495788</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/17/2016 9:30:00 PM</StartTime>
+      <EndTime>6/17/2016 11:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 11:56:15 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495788&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495786</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/17/2016 6:30:00 PM</StartTime>
+      <EndTime>6/17/2016 8:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 11:56:03 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495786&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495783</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/17/2016 3:30:00 PM</StartTime>
+      <EndTime>6/17/2016 6:30:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 11:55:45 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495783&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495782</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/17/2016 12:30:00 PM</StartTime>
+      <EndTime>6/17/2016 2:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 11:55:29 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495782&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495778</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/16/2016 9:30:00 PM</StartTime>
+      <EndTime>6/16/2016 11:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 11:54:53 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495778&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495776</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/16/2016 6:30:00 PM</StartTime>
+      <EndTime>6/16/2016 8:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 11:54:41 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495776&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495775</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/16/2016 3:30:00 PM</StartTime>
+      <EndTime>6/16/2016 6:30:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 11:54:21 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495775&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495773</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/16/2016 12:30:00 PM</StartTime>
+      <EndTime>6/16/2016 2:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 11:54:02 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495773&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495771</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/16/2016 9:00:00 AM</StartTime>
+      <EndTime>6/16/2016 12:00:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>6/6/2016 11:53:46 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495771&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495768</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/15/2016 9:00:00 PM</StartTime>
+      <EndTime>6/16/2016</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 11:53:22 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495768&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495766</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/15/2016 6:30:00 PM</StartTime>
+      <EndTime>6/15/2016 8:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/6/2016 11:53:07 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495766&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495755</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/14/2016 9:00:00 PM</StartTime>
+      <EndTime>6/15/2016</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 11:51:42 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495755&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>495752</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/14/2016 3:00:00 PM</StartTime>
+      <EndTime>6/14/2016 6:00:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/6/2016 11:51:07 AM</InsertDate>
+      <Deleted>False</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=495752&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>462855</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/22/2016 3:30:00 PM</StartTime>
+      <EndTime>6/22/2016 6:30:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/5/2016 3:34:54 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=462855&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>462856</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/13/2016 3:30:00 PM</StartTime>
+      <EndTime>6/13/2016 6:30:00 PM</EndTime>
+      <Description>Sauna 3 uur</Description>
+      <Remarks />
+      <Cost>155</Cost>
+      <OriginalCost>155</OriginalCost>
+      <InsertDate>6/4/2016 3:25:37 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=462856&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>492446</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/11/2016 6:30:00 PM</StartTime>
+      <EndTime>6/11/2016 8:30:00 PM</EndTime>
+      <Description>Sauna 2 uur</Description>
+      <Remarks />
+      <Cost>115</Cost>
+      <OriginalCost>115</OriginalCost>
+      <InsertDate>6/1/2016 3:12:50 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=492446&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+   <RECORD>
+      <LastMinuteID>492426</LastMinuteID>
+      <CompanyID>292493</CompanyID>
+      <StartTime>6/12/2016 9:00:00 AM</StartTime>
+      <EndTime>6/12/2016 12:00:00 PM</EndTime>
+      <Description>Ontbijt (3u)</Description>
+      <Remarks />
+      <Cost>185</Cost>
+      <OriginalCost>185</OriginalCost>
+      <InsertDate>5/31/2016 8:26:37 PM</InsertDate>
+      <Deleted>True</Deleted>
+      <ReservationURL>https://www.resengo.com/code/reserveernu/?LastMinuteID=492426&amp;RN_PartnerID=1&amp;Reference=widget</ReservationURL>
+   </RECORD>
+</RECORDS>
+
