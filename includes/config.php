@@ -1,6 +1,6 @@
 <?php
-//Database constanten
 
+//Database constanten
 define('DB_SERVER','localhost');
 define('DB_USER','timeslots_user');
 define('DB_PASS','parse');
