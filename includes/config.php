@@ -19,4 +19,6 @@ RN_CompanyID=688451&
 RN_CompanyIDs=292493
 */
 
+//xml
+define('X_TESTFILE','../public/testXML.xml');
 ?>

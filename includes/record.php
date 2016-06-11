@@ -6,6 +6,7 @@ class Record extends DatabaseObject {
     
     //mySQL
     protected static $table_name="records";
+    //field names are build dynamically from mySQL columns
     protected static $db_fields = [];
     public $fields_values = [];
     //original xml values before formatting
@@ -15,17 +16,9 @@ class Record extends DatabaseObject {
         global $database;
         $result_array = self::get_columns();
         foreach($result_array as $key => $value) :
-            echo $key . " - " . $value[0] . "<hr/>";
+            array_push(self::$db_fields,$value[0]);
         endforeach;
-        
-        /*
-        while($row = $database->fetch_array($result_set)) {
-            if($row[0] != "id") {
-                array_push(self::$db_fields,$row[0]);
-            }
-            
-        }
-        */
+        echo "Construct field definitions for <b>" . self::$table_name . "</b>: " . join(", ", self::$db_fields) . "<hr/>";
     }
 }    
 
