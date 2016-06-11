@@ -13,13 +13,19 @@ class Record extends DatabaseObject {
     
     public static function construct_fields() {
         global $database;
-        $result_set = self::get_columns();
+        $result_array = self::get_columns();
+        foreach($result_array as $key => $value) :
+            echo $key . " - " . $value[0] . "<hr/>";
+        endforeach;
+        
+        /*
         while($row = $database->fetch_array($result_set)) {
-            echo "<hr/>";
-            foreach($row as $attribute=>$value) {
-                echo $attribute ."       with value       " . $value . "<br/>";
+            if($row[0] != "id") {
+                array_push(self::$db_fields,$row[0]);
             }
+            
         }
+        */
     }
 }    
 

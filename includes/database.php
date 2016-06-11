@@ -12,9 +12,9 @@
             $this->connection = mysqli_connect (DB_SERVER, DB_USER, DB_PASS, DB_NAME);
             if( mysqli_connect_errno() ) {
                 die("<h2>ERROR: DB connect failed, bekijk config.php voor correcte mySQL configuratie. " . 
-                mysqli_connect_error() . " (" . mysqli_connect_errno() . ") </h2>"); 
+                mysqli_connect_error() . " (" . mysqli_connect_errno() . ") </h2> <hr/>"); 
             } else {
-                echo "mySQL connection ok";
+                echo "mySQL connection OK <hr/>";
             }   
         }
         

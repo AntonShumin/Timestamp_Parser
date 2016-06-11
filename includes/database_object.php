@@ -11,7 +11,11 @@ class DatabaseObject {
         global $database;
         $result_set = $database->query($sql);
         //$result_array = $database->fetch_array($result_set);
-        return $result_set;
+        $result_array = [];
+        while($row = $database->fetch_array($result_set)) {
+            $result_array[] = $row;
+        }
+        return $result_array;
     }
     
     
