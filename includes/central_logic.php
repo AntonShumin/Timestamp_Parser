@@ -5,6 +5,7 @@ require_once('initialize.php');
 $check_mySQL = false;
 $check_field_construct = false;
 $check_xml_array = false;
+$check_record_objects = false;
 
 //Step 1 - mySQL connect
 $database = new MySQLDatabase();
@@ -21,8 +22,15 @@ if($check_field_construct) {
     $check_xml_array = $xml_reader->readXML(X_TESTFILE);
 }
 
+//Step 4 - populate record objects
+if($check_xml_array) {
+    $check_record_objects = Record::construct_objects($check_xml_array);
+}
 
-
+//Step 5 - generate mySQL query based on xml data
+if($check_record_objects) {
+    MessageLogger::add_log("Start step 5");
+}
 
 //Log Progress
 MessageLogger::print_log();

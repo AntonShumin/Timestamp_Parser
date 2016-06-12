@@ -29,7 +29,7 @@ class XMLRead {
     
     private function build_array($xml) {
         $this->add_log("Building XML array, ");
-        $this->add_log('Total records: ' . $xml->count() . '. ');
+        $this->add_log('Records found: ' . $xml->count() . '. ');
         $this->send_log();
         //Build key names
         $array_keys = [];
@@ -42,16 +42,16 @@ class XMLRead {
         //Build full array. Each record is 1 $record_array. The collection of individual arrays in $xml_array
         $xml_array = [];
         $record_array = [];
-        $index = 0;
         foreach($xml as $record) {
             $record_array = [];
             foreach($array_keys as $key ) {
                 $record_array[(string)$key] = (string)$record->$key;
             }
-            $xml_array[$index] = $record_array;
-            $index++;
+            //$xml_array[$index] = $record_array;
+            $xml_array[] = $record_array;
         }
-        echo print_r($xml_array[2]);
+        $this->add_log("Constructed xml array with ".count($xml_array)." entries, each holding associative array with ".count($record_array). " lines");
+        $this->send_log();
         return $xml_array;
     }
     

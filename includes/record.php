@@ -28,7 +28,29 @@ class Record extends DatabaseObject {
             MessageLogger::add_log("Construction of Record class field names from mySQL columns failed");
             return false;
         }
-        
+    }
+    
+    //Construct record objects from xml array
+    public static function construct_objects($array) {
+        $record_collection = [];
+        foreach ($array as $record) {
+            $new_object = new self;
+            $record_collection[] = $new_object;
+            $new_object->set_xml_values($record);
+        }
+        if($record_collection){
+            MessageLogger::add_log("Record objects construction successful ".count($record_collection)." objects created");
+            return true;
+        } else {
+            MessageLogger::add_log("Record object construction failed");
+            return false;
+        }
+    }
+    
+    public function set_xml_values($array) {
+        $xml_field_values = $array;
+        print_r($array);
+        echo "<hr/>";
     }
 }    
 
