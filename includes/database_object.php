@@ -20,7 +20,22 @@ class DatabaseObject {
         return $result_array;
     }
     
-    
+    public static function build_sync_query($object_array) {
+        $key = static::$sync_key;
+        $sync_array = [];
+        foreach($object_array as $object) {
+            /*
+            var_dump($object);
+            echo "<hr/>";
+            
+            */
+            //array_push($sync_array,$object->xml_fields_values["LastMinuteID"]);
+        }
+        $query = "SELECT * FROM ".static::$table_name." WHERE id IN (";
+        $query .= join(",",$sync_array);
+        $query .= ");";
+        echo $query;
+    }
     
 }
 ?>

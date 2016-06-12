@@ -10,11 +10,22 @@ class Record extends DatabaseObject {
     protected static $table_name="records";
     //field names are build dynamically from mySQL columns
     protected static $db_fields = [];
+    //original mySQL values before formatting. associative
     public $mySQL_fields_values = [];
-    //original xml values before formatting
+    //original xml values before formatting. associative
     public $xml_fields_values = [];
+    //stores a reference for all created objects
+    public static $object_collection = [];
     
-    //Build db_fields names from the mySQL columns
+    
+    //Synchronizing key between xml and mySQL
+    protected static $sync_key;
+    protected static $syn_date_start;
+    protected static $sync_date_end;
+    protected static $sync_deleted;
+    
+    
+    //Build db_fields names from the mySQL columns. Can be moved to the parent object
     public static function construct_fields() {
         global $database;
         $result_array = self::get_columns();
@@ -23,6 +34,7 @@ class Record extends DatabaseObject {
         endforeach;
         if(self::$db_fields) {
             MessageLogger::add_log("Construct field definitions for <b>" . self::$table_name . "</b> class from mySQL: (".count(self::$db_fields).") " . join(", ", self::$db_fields) );
+            self::sync_vars(); //store field names that are used to synchronize xml and mySQL
             return true;
         } else {
             MessageLogger::add_log("Construction of Record class field names from mySQL columns failed");
@@ -30,16 +42,16 @@ class Record extends DatabaseObject {
         }
     }
     
-    //Construct record objects from xml array
+    //Construct record objects from xml array. Can be moved to the parent object
     public static function construct_objects($array) {
-        $record_collection = [];
         foreach ($array as $record) {
             $new_object = new self;
-            $record_collection[] = $new_object;
             $new_object->set_xml_values($record);
+            self::$object_collection[] = &$new_object;
+            
         }
-        if($record_collection){
-            MessageLogger::add_log("Record objects construction successful ".count($record_collection)." objects created");
+        if(self::$object_collection){
+            MessageLogger::add_log("Record objects construction successful ".count(self::$object_collection)." objects created");
             return true;
         } else {
             MessageLogger::add_log("Record object construction failed");
@@ -47,10 +59,20 @@ class Record extends DatabaseObject {
         }
     }
     
-    public function set_xml_values($array) {
-        $xml_field_values = $array;
-        print_r($array);
-        echo "<hr/>";
+    public function set_xml_values($record) {      
+        $this->xml_fields_values = $record; 
+    }
+    
+    //sync values are class specific
+    public static function sync_vars() {
+        self::$sync_key = self::$db_fields[1];
+        self::$syn_date_start = self::$db_fields[3];
+        self::$sync_date_end = self::$db_fields[4];
+        self::$sync_deleted = self::$db_fields[10];
+    }
+    
+    public function getArray() {
+        return $xml_fields_values;
     }
 }    
 
