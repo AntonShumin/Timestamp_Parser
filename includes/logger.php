@@ -24,7 +24,5 @@ class MessageLogger {
 }
 
 
-MessageLogger::add_log("something");
-MessageLogger::print_log();
 
 ?>
