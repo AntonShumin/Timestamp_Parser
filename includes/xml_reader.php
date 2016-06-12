@@ -9,7 +9,7 @@ class XMLRead {
     
     public function readXML($path) {
         //(future extra)Anti injection path check might be useful
-        //(libxml_)might cause memory problems in a long runnng process. Clear internal error buffewr
+        //(libxml_)might cause memory problems in a long runnng process. Clear internal error buffer
         libxml_use_internal_errors(true);  
         $this->xml_file = simplexml_load_file($path);
         if ($this->xml_file === false) {
@@ -18,10 +18,11 @@ class XMLRead {
                 $this->add_log("<br/>" . $error->message);
             }
             $this->send_log();
+            return false;
         } else {
-            $this->add_log('XML FILE LOADED');
-            $this->build_array($this->xml_file);
-           
+            $this->add_log('XML FILE LOADED.');
+            $check_array = $this->build_array($this->xml_file);
+            return $check_array;   
         } 
     }
     
@@ -30,14 +31,8 @@ class XMLRead {
         $this->add_log("Building XML array, ");
         $this->add_log('Total records: ' . $xml->count() . '. ');
         $this->send_log();
+        return true;
     }
-    
-    
-    
-    
-    
-    
-    
     
     /***************************
     ********LOGGER*************
@@ -53,17 +48,6 @@ class XMLRead {
         MessageLogger::add_log($this->log);
     }
 }
-
-$xml_reader = new XMLRead();
-$xml_reader->readXML(X_TESTFILE);
-
-
-
-
-
-
-
-
 
 /*
         try {

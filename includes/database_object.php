@@ -1,5 +1,7 @@
 <?php 
-require_once("database.php");
+//require_once("database.php");
+//require_once("central_logic.php");
+
   
 class DatabaseObject {
     

@@ -1,20 +1,24 @@
 <?php 
 require_once("config.php");
+require_once("logger.php");
 
 class MySQLDatabase {
     private $connection;
     
-    function __construct() {
+    
+    public function construct_connection() {
         $this->open_connection();
+        $check_connection = $this->connection ? true : false;
+        return $check_connection;
     }
     
     public function open_connection() {
         $this->connection = mysqli_connect (DB_SERVER, DB_USER, DB_PASS, DB_NAME);
         if( mysqli_connect_errno() ) {
-            die("<h2>ERROR: DB connect failed, bekijk config.php voor correcte mySQL configuratie. " . 
-            mysqli_connect_error() . " (" . mysqli_connect_errno() . ") </h2> <hr/>"); 
+            MessageLogger::add_log("ERROR: DB connect failed, bekijk config.php voor correcte mySQL configuratie. " . 
+            mysqli_connect_error() . " (" . mysqli_connect_errno() . ")"); 
         } else {
-            echo "mySQL connection OK <hr/>";
+            MessageLogger::add_log("mySQL connection OK ");
         }   
     }
     
@@ -42,7 +46,7 @@ class MySQLDatabase {
     }
 }
 
-$database = new MySQLDatabase();
+
 
 
     
