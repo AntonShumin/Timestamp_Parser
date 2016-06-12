@@ -27,14 +27,9 @@ if($check_xml_array) {
     $check_record_objects = Record::construct_objects($check_xml_array);
 }
 
-echo count(Record::$object_collection) . "<hr/>"; 
-foreach(Record::$object_collection as &$object) {
-     print_r($object);
-    echo "<hr/>";
-}
 //Step 5 - generate mySQL query based on xml data
 if($check_record_objects) {
-    //Record::build_sync_query($check_record_objects);
+    Record::build_sync_query(Record::$object_collection);
     
 }
 

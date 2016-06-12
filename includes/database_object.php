@@ -24,17 +24,12 @@ class DatabaseObject {
         $key = static::$sync_key;
         $sync_array = [];
         foreach($object_array as $object) {
-            /*
-            var_dump($object);
-            echo "<hr/>";
-            
-            */
-            //array_push($sync_array,$object->xml_fields_values["LastMinuteID"]);
+            $sync_array[] = $object->xml_fields_values[$key];
         }
-        $query = "SELECT * FROM ".static::$table_name." WHERE id IN (";
+        $query = "SELECT * FROM ".static::$table_name." WHERE ".$key." IN (";
         $query .= join(",",$sync_array);
         $query .= ");";
-        echo $query;
+        //echo $query;
     }
     
 }
