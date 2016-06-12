@@ -1,6 +1,7 @@
 <?php
 require_once("config.php");
 require_once("logger.php");
+require_once("central_logic.php");
 
 class XMLRead {
     
@@ -27,11 +28,31 @@ class XMLRead {
     }
     
     private function build_array($xml) {
-        $xml_array = [];
         $this->add_log("Building XML array, ");
         $this->add_log('Total records: ' . $xml->count() . '. ');
         $this->send_log();
-        return true;
+        //Build key names
+        $array_keys = [];
+        //echo $xml->child()->getName();
+        foreach($xml->RECORD->children() as $record) {
+            $array_keys[] = $record->getName();
+        }
+        $this->add_log("Retrieve field names from xml: (".count($array_keys).") ". join(", ", $array_keys) );
+        $this->send_log();
+        //Build full array. Each record is 1 $record_array. The collection of individual arrays in $xml_array
+        $xml_array = [];
+        $record_array = [];
+        $index = 0;
+        foreach($xml as $record) {
+            $record_array = [];
+            foreach($array_keys as $key ) {
+                $record_array[(string)$key] = (string)$record->$key;
+            }
+            $xml_array[$index] = $record_array;
+            $index++;
+        }
+        echo print_r($xml_array[2]);
+        return $xml_array;
     }
     
     /***************************
@@ -46,6 +67,7 @@ class XMLRead {
     //add a single line to logger array
     private function send_log() {
         MessageLogger::add_log($this->log);
+        $this->log = "";
     }
 }
 

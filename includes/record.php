@@ -22,7 +22,7 @@ class Record extends DatabaseObject {
             array_push(self::$db_fields,$value[0]);
         endforeach;
         if(self::$db_fields) {
-            MessageLogger::add_log("Construct field definitions for <b>" . self::$table_name . "</b> class: " . join(", ", self::$db_fields) );
+            MessageLogger::add_log("Construct field definitions for <b>" . self::$table_name . "</b> class from mySQL: (".count(self::$db_fields).") " . join(", ", self::$db_fields) );
             return true;
         } else {
             MessageLogger::add_log("Construction of Record class field names from mySQL columns failed");
