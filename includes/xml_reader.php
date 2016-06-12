@@ -32,7 +32,7 @@ class XMLRead {
         $this->add_log('Records found: ' . $xml->count() . '. ');
         $this->send_log();
         //Build key names
-        $array_keys = [];
+         $array_keys = [];
         //echo $xml->child()->getName();
         foreach($xml->RECORD->children() as $record) {
             $array_keys[] = $record->getName();

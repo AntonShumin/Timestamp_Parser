@@ -29,6 +29,10 @@ class DatabaseObject {
         $query = "SELECT * FROM ".static::$table_name." WHERE ".$key." IN (";
         $query .= join(",",$sync_array);
         $query .= ");";
+        $result_array = static::find_by_sql($query);
+        MessageLogger::add_log("mySQL has found ".count($result_array)." matching database entries.");
+        return $result_array;
+        //print_r($result_array);
         //echo $query;
     }
     

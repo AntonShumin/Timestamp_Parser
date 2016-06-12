@@ -44,23 +44,41 @@ class Record extends DatabaseObject {
     
     //Construct record objects from xml array. Can be moved to the parent object
     public static function construct_objects($array) {
+        //populate with objects
         foreach ($array as $record) {
             $new_object = new self;
-            $new_object->set_xml_values($record);
+            $new_object->xml_fields_values = $record;
             self::$object_collection[] = &$new_object;
-            
         }
-        if(self::$object_collection){
-            MessageLogger::add_log("Record objects construction successful ".count(self::$object_collection)." objects created");
-            return true;
-        } else {
-            MessageLogger::add_log("Record object construction failed");
-            return false;
-        }
-    }
+        //return result
+        $b_column_match = self::check_column_match(); //check if xml fields match mySQL columns, first object
+         if(self::$object_collection && $b_column_match){
+             MessageLogger::add_log("Record objects construction successful ".count(self::$object_collection)." objects created");
+             return true;
+         } else {
+             MessageLogger::add_log("Record object construction failed");
+         return false;
+         }
+    }   
     
-    public function set_xml_values($record) {      
-        $this->xml_fields_values = $record; 
+    //checks first object for matching xml and sql column names
+    public static function check_column_match() {
+        $log_array = [];
+        foreach(self::$db_fields as $col_name) {
+            if($col_name != "id") {
+                if( !array_key_exists($col_name,self::$object_collection[0]->xml_fields_values)){
+                    $log_array[] = $col_name;
+                }
+            }
+        }
+        if($log_array){
+            MessageLogger::add_log("ERROR: mySQL column and .xml fieldname mismatch. Following mySQL names were not found: ".join(", ",$log_array));
+            return false;
+        } else {
+            MessageLogger::add_log("mySQL columns and .xml field names match");
+            return true;
+        }
+        
     }
     
     //sync values are class specific
@@ -74,6 +92,7 @@ class Record extends DatabaseObject {
     public function getArray() {
         return $xml_fields_values;
     }
+    
 }    
 
 
