@@ -6,8 +6,9 @@ class XMLRead {
     private $xml_file;
     
     public function readXML($path) {
-        //Anti injection path check might be useful
-        libxml_use_internal_errors(true); //might cause memory problems in a long runnng process. Clear internal error buffer
+        //(future extra)Anti injection path check might be useful
+        //(libxml_)might cause memory problems in a long runnng process. Clear internal error buffewr
+        libxml_use_internal_errors(true);  
         $this->xml_file = simplexml_load_file($path);
         if ($this->xml_file === false) {
             echo "Failed loading XML\n";
@@ -22,8 +23,10 @@ class XMLRead {
     }
     
     private function build_array($xml) {
-        echo "Building XML array<hr/>";
-        echo 'Total records: ' . $xml->count() . '<hr>';
+        $xml_array = [];
+        $log = "Building XML array, ";
+        $log .= 'Total records: ' . $xml->count() . '. ';
+        
     }
 }
 

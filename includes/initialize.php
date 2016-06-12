@@ -1,4 +1,5 @@
 <?php
+require_once("logger.php");
 //configuratiebestang db access
 require_once("config.php");
 //DB specifieke klaasen
