@@ -22,6 +22,10 @@ class DatabaseObject {
     
     public static function build_sync_query() {
         $object_array = Record::$object_collection;
+        if( empty($object_array) || !$object_array) {
+            MessageLogger::add_log("ERROR: no objects have been instantiated to process sync query. Source: database_object.php build_sync_query");
+            return false;
+        }
         $key = static::$sync_key;
         $sync_array = [];
         foreach($object_array as $object) {
@@ -36,14 +40,12 @@ class DatabaseObject {
             $log_copy = static::copy_xml_all($object_array);    
         }
         MessageLogger::add_log("mySQL has found ".count($result_array)." matching database entries.".$log_copy);
-        return $result_array;
+        return true;
     }
     
     public static function copy_xml_all($object_array) {
         foreach($object_array as $object) {
             $object->mySQL_fields_values = $object->xml_fields_values;
-            print_r($object->xml_fields_values);
-            echo "<hr/>";
         }
         //$this->$mySQL_fields_values  = $this->$xml_fields_values;
         return " Copying .xml values to mysql fields for all objects";

@@ -32,6 +32,8 @@ if($check_record_objects) {
     Record::build_sync_query();
 }
 
+
+
 //Log Progress
 MessageLogger::print_log();
 
