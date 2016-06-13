@@ -21,7 +21,7 @@ class Record extends DatabaseObject {
     //holds values to be updated/created in mySQL
     public $mismatch_fields_values = [];
     //if .xml data differs from mySQL it will be marked true for upload
-    public $needs_update = false;
+    public $mark_for_update = false;
     
     
     //Synchronizing key between xml and mySQL
@@ -53,7 +53,7 @@ class Record extends DatabaseObject {
         //populate with objects
         foreach ($array as $record) {
             $new_object = new self;
-            $new_object->xml_fields_values = $record; //specifically tested in bughunt, objects and fields work as intended
+            $new_object->xml_fields_values = $record; //specifically tested during bughunt, objects and fields work as intended
             self::$object_collection[] = $new_object;
             
         }

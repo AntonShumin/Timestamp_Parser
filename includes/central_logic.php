@@ -1,5 +1,7 @@
 <?php
+
 require_once('initialize.php');
+
 
 //Checks
 $check_mySQL = false;
@@ -28,13 +30,28 @@ if($check_xml_array) {
     $check_record_objects = Record::construct_objects($check_xml_array);
 }
 
-//Step 5 - generate mySQL query based on xml data
+//Step 5 - populate objects with xml and sql data, match by sync_key
 if($check_record_objects) {
     $check_sync_job = Record::xml_sync_job();
 }
 
 
+//Step 6 - compare sql and 
+if($check_sync_job){
+    Record::build_mismatch();
+    /*
+    foreach(Record::$object_collection as $object) {
+    print_r($object->mismatch_fields_values);
+    echo "<hr/>";
+    }
+    */
+}
+
 //Log Progress
 MessageLogger::print_log();
+
+//Page construction time
+$time = microtime(true) - $_SERVER["REQUEST_TIME_FLOAT"];
+echo "Page constructed in $time seconds\n";
 
 ?>

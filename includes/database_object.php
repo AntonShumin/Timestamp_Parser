@@ -21,6 +21,7 @@ class DatabaseObject {
     
     //Step 5. Constructs an sql query, populates objects and 
     public static function xml_sync_job() {
+        //Construct query
         $object_array = Record::$object_collection;
         if( empty($object_array) || !$object_array) {
             MessageLogger::add_log("ERROR: no objects have been instantiated to process sync query. Source: database_object.php xml_sync_job()");
@@ -35,19 +36,17 @@ class DatabaseObject {
         $query .= join(",",$sync_array);
         $query .= ");";
         $result_array = static::find_by_sql($query);
-        $log_copy = ""; $log_match = "";
-        if(empty($result_array)) { //if not sql records are found, copy xml records to xml
-            $log_copy = static::copy_xml_all($object_array);
-            if(!$log_copy) return false;
-        } else { //sync mySQL result with matching objects
+        $log_match = "";
+        MessageLogger::add_log("mySQL has found ".count($result_array)." matching database entries.");
+        //if matching records are found, match xml to sql for each object.
+        if(!empty($result_array)) { 
             $log_match = static::query_match($result_array);
         }
-        MessageLogger::add_log("mySQL has found ".count($result_array)." matching database entries.".$log_copy);
         if($log_match) MessageLogger::add_log($log_match);
         return true;
     }
     
-    //loops through each object and matches sql to xml
+    //Step 5.1: loops through each object and matches sql to xml
     public static function query_match($result_array){
         $column_names = static::$db_fields;
         $count_objects = 0;
@@ -65,6 +64,32 @@ class DatabaseObject {
         }
         $difference = $count_objects - $count_matching_records;
         return "Processed ".$count_objects." xml records where ".$count_matching_records." match ".static::$sync_key." with existing sql rows (".$difference." new entries).";
+    }
+    
+    //Step 6: Loops through every object and build a mismatch array
+    public static function build_mismatch(){
+        $object_array = Record::$object_collection;
+        $count_empty = 0;
+        $count_mismatched_records = 0;
+        $count_mismatched_objects = 0;
+        foreach($object_array as $object) {
+            if(empty($object->mySQL_fields_values)) {
+                $object->mismatch_fields_values = $object->xml_fields_values;
+                $object->mark_for_update = true;
+                $count_empty++;
+            } else { //if objects are populated by sql data, check for mismatches with xml data
+                foreach(static::$db_fields as $field){
+                    if($object->mySQL_fields_values[$field] != $object->xml_fields_values[$field]){
+                        $object->mismatch_fields_values[$field] = $object->xml_fields_values[$field]; //assumes that xml is the most recent data
+                        $count_mismatched_records++;
+                        $object->mark_for_update = true;
+                    }
+                }
+                if($object->mark_for_update) $count_mismatched_objects++;
+            } 
+        }
+        MessageLogger::add_log("Mismatch check: ".$count_empty." new records. Existing records: ".$count_mismatched_records." oudated fields in ".$count_mismatched_objects." objects");
+        
     }
     
     public static function copy_xml_all($object_array) {
