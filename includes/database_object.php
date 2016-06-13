@@ -2,7 +2,7 @@
 //require_once("database.php");
 //require_once("central_logic.php");
 
-  
+//Parent of classes like Record. All methods here can be re-used by any similar class.   
 class DatabaseObject {
     
     public static function get_columns() {
@@ -12,7 +12,6 @@ class DatabaseObject {
     public static function find_by_sql($sql="") {
         global $database;
         $result_set = $database->query($sql);
-        //$result_array = $database->fetch_array($result_set);
         $result_array = [];
         while($row = $database->fetch_array($result_set)) {
             $result_array[] = $row;
@@ -20,10 +19,11 @@ class DatabaseObject {
         return $result_array;
     }
     
-    public static function build_xml_sync_query() {
+    //Step 5. Constructs an sql query, populates objects and 
+    public static function xml_sync_job() {
         $object_array = Record::$object_collection;
         if( empty($object_array) || !$object_array) {
-            MessageLogger::add_log("ERROR: no objects have been instantiated to process sync query. Source: database_object.php build_sync_query");
+            MessageLogger::add_log("ERROR: no objects have been instantiated to process sync query. Source: database_object.php xml_sync_job()");
             return false;
         }
         $key = static::$sync_key;
@@ -35,13 +35,36 @@ class DatabaseObject {
         $query .= join(",",$sync_array);
         $query .= ");";
         $result_array = static::find_by_sql($query);
-        $log_copy = "";
+        $log_copy = ""; $log_match = "";
         if(empty($result_array)) { //if not sql records are found, copy xml records to xml
             $log_copy = static::copy_xml_all($object_array);
             if(!$log_copy) return false;
+        } else { //sync mySQL result with matching objects
+            $log_match = static::query_match($result_array);
         }
         MessageLogger::add_log("mySQL has found ".count($result_array)." matching database entries.".$log_copy);
+        if($log_match) MessageLogger::add_log($log_match);
         return true;
+    }
+    
+    //loops through each object and matches sql to xml
+    public static function query_match($result_array){
+        $column_names = static::$db_fields;
+        $count_objects = 0;
+        $count_matching_records = 0;
+        $count_missing_records = 0;
+        foreach (static::$object_collection as $object) { //each object
+            $count_objects++;
+            foreach($result_array as $row_array) { //each sql row
+                if($row_array[static::$sync_key] == $object->xml_fields_values[static::$sync_key]) {
+                    $count_matching_records++;
+                    $id = $row_array["id"];
+                    $object->mySQL_fields_values = $row_array;
+                }
+            }
+        }
+        $difference = $count_objects - $count_matching_records;
+        return "Processed ".$count_objects." xml records where ".$count_matching_records." match ".static::$sync_key." with existing sql rows (".$difference." new entries).";
     }
     
     public static function copy_xml_all($object_array) {

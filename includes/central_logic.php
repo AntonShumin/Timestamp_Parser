@@ -6,6 +6,7 @@ $check_mySQL = false;
 $check_field_construct = false;
 $check_xml_array = false;
 $check_record_objects = false;
+$check_sync_job = false;
 
 //Step 1 - mySQL connect
 $database = new MySQLDatabase();
@@ -29,9 +30,8 @@ if($check_xml_array) {
 
 //Step 5 - generate mySQL query based on xml data
 if($check_record_objects) {
-    Record::build_xml_sync_query();
+    $check_sync_job = Record::xml_sync_job();
 }
-
 
 
 //Log Progress

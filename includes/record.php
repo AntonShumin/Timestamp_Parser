@@ -6,18 +6,22 @@ require_once("logger.php");
 //DatabaseObject is verantwoordelijk voor mySQL queries
 class Record extends DatabaseObject {
     
-    //mySQL
+    //matches mySQL table name
     protected static $table_name="records";
-    //field names are build dynamically from mySQL columns
+    //field names (build dynamically from mySQL columns)
     protected static $db_fields = [];
-    //assumes that every sql DB table has primary key = id
+    //stores a reference for all created objects
+    public static $object_collection = [];
+    //every sql table should have primary key = id
     public $id;
     //original mySQL values before formatting. associative
     public $mySQL_fields_values = [];
     //original xml values before formatting. associative
     public $xml_fields_values = [];
-    //stores a reference for all created objects
-    public static $object_collection = [];
+    //holds values to be updated/created in mySQL
+    public $mismatch_fields_values = [];
+    //if .xml data differs from mySQL it will be marked true for upload
+    public $needs_update = false;
     
     
     //Synchronizing key between xml and mySQL
@@ -53,8 +57,6 @@ class Record extends DatabaseObject {
             self::$object_collection[] = $new_object;
             
         }
-        
-        //return result
         $b_column_match = self::check_column_match(); //check if xml fields match mySQL columns, first object
          if(self::$object_collection && $b_column_match){
             MessageLogger::add_log("Record objects construction successful ".count(self::$object_collection)." objects created");
