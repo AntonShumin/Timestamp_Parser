@@ -47,17 +47,19 @@ class Record extends DatabaseObject {
         //populate with objects
         foreach ($array as $record) {
             $new_object = new self;
-            $new_object->xml_fields_values = $record;
-            self::$object_collection[] = &$new_object;
+            $new_object->xml_fields_values = $record; //specifically tested in bughunt, objects and fields work as intended
+            self::$object_collection[] = $new_object;
+            
         }
+        
         //return result
         $b_column_match = self::check_column_match(); //check if xml fields match mySQL columns, first object
          if(self::$object_collection && $b_column_match){
-             MessageLogger::add_log("Record objects construction successful ".count(self::$object_collection)." objects created");
-             return true;
+            MessageLogger::add_log("Record objects construction successful ".count(self::$object_collection)." objects created");
+            return true;
          } else {
-             MessageLogger::add_log("Record object construction failed");
-         return false;
+            MessageLogger::add_log("Record object construction failed");
+            return false;
          }
     }   
     
@@ -81,7 +83,7 @@ class Record extends DatabaseObject {
         
     }
     
-    //sync values are class specific
+    //sync values are class specific, matching keys for xml and mysql
     public static function sync_vars() {
         self::$sync_key = self::$db_fields[1];
         self::$syn_date_start = self::$db_fields[3];

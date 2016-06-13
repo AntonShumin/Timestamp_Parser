@@ -32,8 +32,7 @@ class XMLRead {
         $this->add_log('Records found: ' . $xml->count() . '. ');
         $this->send_log();
         //Build key names
-         $array_keys = [];
-        //echo $xml->child()->getName();
+        $array_keys = [];
         foreach($xml->RECORD->children() as $record) {
             $array_keys[] = $record->getName();
         }
@@ -52,7 +51,7 @@ class XMLRead {
         }
         $this->add_log("Constructed xml array with ".count($xml_array)." entries, each holding associative array with ".count($record_array). " lines");
         $this->send_log();
-        return $xml_array;
+        return $xml_array; //tested in bughunt, return array of arrays with expected values
     }
     
     /***************************
