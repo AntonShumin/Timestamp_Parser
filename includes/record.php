@@ -10,6 +10,8 @@ class Record extends DatabaseObject {
     protected static $table_name="records";
     //field names are build dynamically from mySQL columns
     protected static $db_fields = [];
+    //assumes that every sql DB table has primary key = id
+    public $id;
     //original mySQL values before formatting. associative
     public $mySQL_fields_values = [];
     //original xml values before formatting. associative

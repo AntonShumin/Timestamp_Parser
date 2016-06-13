@@ -29,7 +29,7 @@ if($check_xml_array) {
 
 //Step 5 - generate mySQL query based on xml data
 if($check_record_objects) {
-    Record::build_sync_query();
+    Record::build_xml_sync_query();
 }
 
 
