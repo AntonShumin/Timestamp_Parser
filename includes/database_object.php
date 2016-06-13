@@ -79,17 +79,24 @@ class DatabaseObject {
                 $count_empty++;
             } else { //if objects are populated by sql data, check for mismatches with xml data
                 foreach(static::$db_fields as $field){
-                    if($object->mySQL_fields_values[$field] != $object->xml_fields_values[$field]){
-                        $object->mismatch_fields_values[$field] = $object->xml_fields_values[$field]; //assumes that xml is the most recent data
-                        $count_mismatched_records++;
-                        $object->mark_for_update = true;
+                    //break process if objects dont have appropriate array keys
+                    if(array_key_exists($field,$object->mySQL_fields_values) && array_key_exists($field,$object->xml_fields_values) ) {
+                        //if mismatch found for a single value
+                        if($object->mySQL_fields_values[$field] != $object->xml_fields_values[$field]){
+                            $object->mismatch_fields_values[$field] = $object->xml_fields_values[$field]; //assumes that xml is the most recent data
+                            $count_mismatched_records++;
+                            $object->mark_for_update = true;
+                        }   
+                    } else {
+                        MessageLogger::add_log("ERROR: build_mismatch has failed to find field value: ".$field);
+                        return false;
                     }
                 }
                 if($object->mark_for_update) $count_mismatched_objects++;
             } 
         }
-        MessageLogger::add_log("Mismatch check: ".$count_empty." new records. Existing records: ".$count_mismatched_records." oudated fields in ".$count_mismatched_objects." objects");
-        
+        MessageLogger::add_log("Mismatch check sql-xml: ".$count_empty." new sql records. Existing records: ".$count_mismatched_records." oudated fields in ".$count_mismatched_objects." objects");
+        return true;
     }
     
     public static function copy_xml_all($object_array) {
