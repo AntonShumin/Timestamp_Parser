@@ -3,7 +3,7 @@
 require_once("database_object.php");
 require_once("logger.php");
 
-//DatabaseObject is a class indepandant record processor 
+//DatabaseObject holds general purpose object methods (update, create objects)
 class Record extends DatabaseObject {
     
     //matches mySQL table name

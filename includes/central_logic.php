@@ -53,9 +53,8 @@ if($check_mismatch){
 //Log Progress
 MessageLogger::print_log();
 
-/*
+
 //Page construction time
 $time = microtime(true) - $_SERVER["REQUEST_TIME_FLOAT"];
 echo "Page constructed in $time seconds\n";
-*/
 ?>
