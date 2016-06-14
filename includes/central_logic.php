@@ -34,6 +34,11 @@ if($check_record_objects) {
     $check_sync_job = Record::xml_sync_job();
 }
 
+//Step 5-EXTRA - loop through all objects and check if date is expired
+if($check_sync_job) {
+    Record::date_checker();
+}
+
 //Step 6 - compare sql and xml individual data values
 if($check_sync_job){
     $check_mismatch = Record::build_mismatch();

@@ -201,6 +201,16 @@ class DatabaseObject {
         }
         
     }
+    
+    //STEP 5-EXTRA Date checker
+    public static function date_checker(){
+        $count_expired = 0;
+        foreach(Record::$object_collection as $object) {
+            $count_expired += $object->check_date();
+        }
+        MessageLogger::add_log("xml records expired and set to deleted = ".$count_expired);
+    }
+    
     /****************** ***********************
     ********mySQL general fucntions ***********
     ******************* **********************/

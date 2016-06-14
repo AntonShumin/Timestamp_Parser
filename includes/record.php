@@ -38,11 +38,21 @@ class Record extends DatabaseObject {
         self::$sync_date_end = self::$db_fields[4];
         self::$sync_deleted = self::$db_fields[10];
     }
-    /*
-    public function getArray() {
-        return $xml_fields_values;
+
+    public function check_date() {
+        $var_date = $this->xml_fields_values[self::$sync_date_end];
+        $var_deleted = $this->xml_fields_values[self::$sync_deleted];
+        
+        $var_date_converted = strtotime($var_date);
+        $date = new DateTime();
+        $time_now = $date->getTimestamp();
+        
+        if($time_now > $var_date_converted && $var_deleted == "False") {
+            $this->xml_fields_values[self::$sync_deleted] = "True";
+            return 1;
+        }
+        return 0;
     }
-    */
 }    
 
 
