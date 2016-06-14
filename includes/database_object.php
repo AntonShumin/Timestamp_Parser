@@ -101,16 +101,7 @@ class DatabaseObject {
         MessageLogger::add_log("Mismatch check sql-xml: ".$count_empty." new sql records. Existing records: ".$count_mismatched_records." outdated fields in ".$count_mismatched_objects." objects");
         return true;
     }
-    /*
-    public static function copy_xml_all($object_array) {
-        foreach($object_array as $object) {
-            $object->mySQL_fields_values = $object->xml_fields_values;
-        }
-        $ok = static::write_all_to_sql();
-        return $ok ? " Copying .xml values to mysql fields for all objects. ".$ok : false;    
-        
-    }
-    */
+
     
     protected static function write_all_to_sql(){
         $index = 0;
@@ -149,7 +140,61 @@ class DatabaseObject {
             
     }
 
+    //Build db_fields names from the mySQL columns
+    public static function construct_fields() {
+        global $database;
+        $result_array = static::get_columns();
+        foreach($result_array as $key => $value) :
+            array_push(static::$db_fields,$value[0]);//remove index
+        endforeach;
+        if(static::$db_fields) {
+            MessageLogger::add_log("mySQL table " . static::$table_name . " has following column names: (".count(static::$db_fields).") " . join(", ", static::$db_fields) );
+            static::sync_vars(); //store field names that are used to synchronize xml and mySQL
+            return true;
+        } else {
+            MessageLogger::add_log("Construction of Record class field names from mySQL columns failed");
+            return false;
+        }
+    }
     
+    //Construct record objects from xml array.
+    public static function construct_objects($array) {
+        //populate with objects
+        foreach ($array as $record) {
+            $new_object = new static;
+            $new_object->xml_fields_values = $record; //specifically tested during bughunt, objects and fields work as intended
+            static::$object_collection[] = $new_object;
+            
+        }
+        $b_column_match = static::check_column_match(); //check if xml fields match mySQL columns, first object
+         if(static::$object_collection && $b_column_match){
+            MessageLogger::add_log("Record objects construction successful ".count(static::$object_collection)." objects created");
+            return true;
+         } else {
+            MessageLogger::add_log("Record object construction failed");
+            return false;
+         }
+    } 
+    
+    //checks first object for matching xml and sql column names
+    public static function check_column_match() {
+        $log_array = [];
+        foreach(static::$db_fields as $col_name) {
+            if($col_name != "id") {
+                if( !array_key_exists($col_name,static::$object_collection[0]->xml_fields_values)){
+                    $log_array[] = $col_name;
+                }
+            }
+        }
+        if($log_array){
+            MessageLogger::add_log("ERROR: mySQL column and .xml fieldname mismatch. Following mySQL names were not found: ".join(", ",$log_array));
+            return false;
+        } else {
+            MessageLogger::add_log("mySQL columns and .xml field names match");
+            return true;
+        }
+        
+    }
     /****************** ***********************
     ********mySQL general fucntions ***********
     ******************* **********************/
