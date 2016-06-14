@@ -1,4 +1,5 @@
 <?php
+//phpinfo();
 require_once('initialize.php');
 
 //Error check. This (if) structure was chosen for readability and modularity
@@ -52,8 +53,9 @@ if($check_mismatch){
 //Log Progress
 MessageLogger::print_log();
 
+/*
 //Page construction time
 $time = microtime(true) - $_SERVER["REQUEST_TIME_FLOAT"];
 echo "Page constructed in $time seconds\n";
-
+*/
 ?>

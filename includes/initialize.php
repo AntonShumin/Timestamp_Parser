@@ -1,4 +1,5 @@
 <?php
+
 require_once("logger.php");
 //configuratiebestand db access
 require_once("config.php");
