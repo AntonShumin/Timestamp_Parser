@@ -1,20 +1,19 @@
 <?php
-
 require_once('initialize.php');
 
-
-//Checks
+//Error check. This (if) structure was chosen for readability and modularity
 $check_mySQL = false;
 $check_field_construct = false;
 $check_xml_array = false;
 $check_record_objects = false;
 $check_sync_job = false;
+$check_mismatch = false;
 
 //Step 1 - mySQL connect
 $database = new MySQLDatabase();
 $check_mySQL = $database->construct_connection();
 
-//Step 2 - prepare record.php
+//Step 2 - prepare Record class
 if($check_mySQL) {
     $check_field_construct = Record::conStruct_fields();
 }
@@ -35,16 +34,14 @@ if($check_record_objects) {
     $check_sync_job = Record::xml_sync_job();
 }
 
-
-//Step 6 - compare sql and 
+//Step 6 - compare sql and xml individual data values
 if($check_sync_job){
-    Record::build_mismatch();
-    /*
-    foreach(Record::$object_collection as $object) {
-    print_r($object->mismatch_fields_values);
-    echo "<hr/>";
-    }
-    */
+    $check_mismatch = Record::build_mismatch();
+}
+
+//Step 7 - create/update to sql
+if($check_mismatch){
+    Record::upload_sql_records();
 }
 
 //Log Progress

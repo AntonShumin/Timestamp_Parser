@@ -36,10 +36,10 @@ class Record extends DatabaseObject {
         global $database;
         $result_array = self::get_columns();
         foreach($result_array as $key => $value) :
-            array_push(self::$db_fields,$value[0]);
+            array_push(self::$db_fields,$value[0]);//remove index
         endforeach;
         if(self::$db_fields) {
-            MessageLogger::add_log("Construct field definitions for <b>" . self::$table_name . "</b> class from mySQL: (".count(self::$db_fields).") " . join(", ", self::$db_fields) );
+            MessageLogger::add_log("mySQL table " . self::$table_name . " has following column names: (".count(self::$db_fields).") " . join(", ", self::$db_fields) );
             self::sync_vars(); //store field names that are used to synchronize xml and mySQL
             return true;
         } else {
