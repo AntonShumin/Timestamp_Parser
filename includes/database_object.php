@@ -57,7 +57,7 @@ class DatabaseObject {
             foreach($result_array as $row_array) { //each sql row
                 if($row_array[static::$sync_key] == $object->xml_fields_values[static::$sync_key]) {
                     $count_matching_records++;
-                    $id = $row_array["id"];
+                    $object->id = $row_array["id"];
                     $object->mySQL_fields_values = $row_array;
                 }
             }
@@ -153,6 +153,8 @@ class DatabaseObject {
     /****************** ***********************
     ********mySQL general fucntions ***********
     ******************* **********************/
+    //Clean table: TRUNCATE TABLE records;
+    
     protected function create() {
         global $database;
         $attributes = $this->mismatch_fields_values; //escape string to be implemented here
@@ -170,7 +172,17 @@ class DatabaseObject {
     }
     
     protected function update() {
-        
+        global $database;
+        $attributes = $this->mismatch_fields_values;
+        $attribute_pairs = [];
+        foreach($attributes as $key => $value) {
+            $attribute_pairs[] = "{$key}='{$value}'";
+        }
+        $sql = "UPDATE ".static::$table_name." SET ";
+        $sql .= join(", ", $attribute_pairs);
+        $sql .= " WHERE id=" . $this->id;
+        //echo $sql."<hr/>";
+        $database->query($sql);
     }
      
     
