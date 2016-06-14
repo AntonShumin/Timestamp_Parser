@@ -124,10 +124,16 @@ class DatabaseObject {
         foreach($object_array as $object){  
             //create new sql rows
             if(empty($object->mySQL_fields_values)) { //create new sql entry
-                $object->create();
+                if( !$object->create() ){
+                    MessageLogger::add_log("ERROR: SQL create query failed!");
+                    return false;
+                }
                 $count_created++;
             } elseif($object->mark_for_update) {
-                $object->update();
+                if( !$object->update() ){
+                    MessageLogger::add_log("ERROR: SQL update query failed!");
+                    return false;
+                }
                 $count_updated++;
             }
         }
@@ -227,7 +233,11 @@ class DatabaseObject {
         $sql .= join(", ", $attribute_pairs);
         $sql .= " WHERE id=" . $this->id;
         //echo $sql."<hr/>";
-        $database->query($sql);
+        if($database->query($sql)) {
+            return true;
+        } else {
+            return false;
+        }
     }
      
     
