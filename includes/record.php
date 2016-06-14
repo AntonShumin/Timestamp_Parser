@@ -3,7 +3,7 @@
 require_once("database_object.php");
 require_once("logger.php");
 
-//DatabaseObject is verantwoordelijk voor mySQL queries
+//DatabaseObject is a class indepandant record processor 
 class Record extends DatabaseObject {
     
     //matches mySQL table name

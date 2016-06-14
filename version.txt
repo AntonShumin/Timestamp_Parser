@@ -1,0 +1,15 @@
+******************************
+Version 1.1 created on ...
+******************************
+- Write log to file
+- Check old sql record for expired date
+- Namespace classes?
+
+******************************
+Version 1 created on 14/6/2016
+******************************
+-Dynamic browser log. 
+-Read xml and sql
+-Check xml for expired date
+-Compare xml and sql mismatch
+-Write relevant update
