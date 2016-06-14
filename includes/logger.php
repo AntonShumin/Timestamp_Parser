@@ -13,12 +13,11 @@ class MessageLogger {
         foreach (self::$log_message as $log) {
             echo $log . "<hr/>";
         }
-        self::clear_log();
+        //self::clear_log();
     }
     
-    private static function clear_log() {
-        //unset(self::$log_message);
-        //check $ar= array_values($ar); if there are holes 
+    public static function clear_log() {
+        self::$log_message = [];
     }
     
 }
