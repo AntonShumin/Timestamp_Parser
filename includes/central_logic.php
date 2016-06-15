@@ -56,5 +56,5 @@ MessageLogger::print_log();
 
 //Page construction time
 $time = microtime(true) - $_SERVER["REQUEST_TIME_FLOAT"];
-echo "Page constructed in $time seconds\n";
+echo "Page constructed in $time seconds".PHP_EOL;
 ?>

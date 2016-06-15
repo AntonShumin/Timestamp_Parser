@@ -12,11 +12,15 @@ class MessageLogger {
     public static function print_log() {
         //check if ran from command line
         $line_break = PHP_SAPI != "cli" ? "<hr/>" : PHP_EOL; //If not cmd. EOL is a cross platform new line
+        //Add linebreak and a header with timestamp
+       
+        array_unshift(self::$log_message,self::construct_header());
         //generate a string and output
         foreach (self::$log_message as &$log) {
             $log = "* ".$log;
             echo $log . $line_break;
         }
+         array_unshift(self::$log_message,PHP_EOL);
         self::write_to_file();
         self::clear_log();
     }
@@ -29,15 +33,18 @@ class MessageLogger {
         //enable file writing
         chmod(LOG_FILE,0777);
         //open log.txt. check config.php for path
-        if($handle = fopen(LOG_FILE,'wt')){
-            //generate output and write to file
-            $write = fwrite($handle,join(PHP_EOL,self::$log_message));
+        if($handle = fopen(LOG_FILE,"a+")){
+            //generate output and write to file  
+            $write = fwrite($handle,$write = join(PHP_EOL,self::$log_message));
+            echo $write ? PHP_EOL.'Creating an entry in log.txt ('.$write." bytes)".PHP_EOL : PHP_EOL.'Could not write to log.txt. '; 
             fclose($handle);
-            $write ? self::add_log('Creating an entry in log.txt ('.$write." bytes)") : self::add_log('Could not write to log.txt'); 
         } else {
             self::add_log('Unable to open log.txt. Check permissions');     
         }
-        
+    }
+    
+    public static function construct_header(){
+        return "********** Header3 *************";
     }
     
 }
