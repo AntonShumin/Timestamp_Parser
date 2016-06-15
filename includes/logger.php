@@ -12,15 +12,16 @@ class MessageLogger {
     public static function print_log() {
         //check if ran from command line
         $line_break = PHP_SAPI != "cli" ? "<hr/>" : PHP_EOL; //If not cmd. EOL is a cross platform new line
-        //Add linebreak and a header with timestamp
-       
-        array_unshift(self::$log_message,self::construct_header());
+        
+        
         //generate a string and output
         foreach (self::$log_message as &$log) {
             $log = "* ".$log;
             echo $log . $line_break;
         }
-         array_unshift(self::$log_message,PHP_EOL);
+        //Create header with timestamp
+        self::construct_header();
+        array_unshift(self::$log_message,PHP_EOL);
         self::write_to_file();
         self::clear_log();
     }
@@ -44,7 +45,13 @@ class MessageLogger {
     }
     
     public static function construct_header(){
-        return "********** Header3 *************";
+        $header = [];
+        $header[] = "**********************************************************";
+        $header[] = "      Log Entry: ".date('g:ia, l, F j, Y');
+        $header[] = "**********************************************************";
+        foreach ($header as $item) {
+            array_unshift(self::$log_message,$item);
+        }
     }
     
 }

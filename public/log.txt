@@ -1,29 +1,49 @@
 
 
-* ********** Header2 *************
+* **********************************************************
+*       Log Entry: 1:09pm, Wednesday, June 15, 2016
+* **********************************************************
 * mySQL connection OK
 * mySQL table records has following column names: (12) id, LastMinuteID, CompanyID, StartTime, EndTime, Description, Remarks, Cost, OriginalCost, InsertDate, Deleted, ReservationURL
-*  XML FILE LOADED. Building XML array,  Records found: 87. 
+*  XML FILE LOADED. Building XML array,  Records found: 86. 
 *  Retrieve field names from xml: (11) LastMinuteID, CompanyID, StartTime, EndTime, Description, Remarks, Cost, OriginalCost, InsertDate, Deleted, ReservationURL
-*  Constructed xml array with 87 entries, each holding associative array with 11 lines
+*  Constructed xml array with 86 entries, each holding associative array with 11 lines
 * mySQL columns and .xml field names match
-* Record objects construction successful 87 objects created
-* mySQL has found 87 matching database entries.
-* Processed 87 xml records where 87 match LastMinuteID with existing sql rows (0 new entries).
+* Record objects construction successful 86 objects created
+* mySQL has found 86 matching database entries.
+* Processed 86 xml records where 86 match LastMinuteID with existing sql rows (0 new entries).
 * xml records expired and set to deleted = 0
 * Mismatch check sql-xml: 0 new sql records. Existing records: 0 outdated fields in 0 objects
 * mySQL: Your records are up to date!
 
-* ********** Header3 *************
+* **********************************************************
+*       Log Entry: 1:09pm, Wednesday, June 15, 2016
+* **********************************************************
 * mySQL connection OK
 * mySQL table records has following column names: (12) id, LastMinuteID, CompanyID, StartTime, EndTime, Description, Remarks, Cost, OriginalCost, InsertDate, Deleted, ReservationURL
-*  XML FILE LOADED. Building XML array,  Records found: 87. 
+*  XML FILE LOADED. Building XML array,  Records found: 86. 
 *  Retrieve field names from xml: (11) LastMinuteID, CompanyID, StartTime, EndTime, Description, Remarks, Cost, OriginalCost, InsertDate, Deleted, ReservationURL
-*  Constructed xml array with 87 entries, each holding associative array with 11 lines
+*  Constructed xml array with 86 entries, each holding associative array with 11 lines
 * mySQL columns and .xml field names match
-* Record objects construction successful 87 objects created
-* mySQL has found 87 matching database entries.
-* Processed 87 xml records where 87 match LastMinuteID with existing sql rows (0 new entries).
+* Record objects construction successful 86 objects created
+* mySQL has found 86 matching database entries.
+* Processed 86 xml records where 86 match LastMinuteID with existing sql rows (0 new entries).
+* xml records expired and set to deleted = 0
+* Mismatch check sql-xml: 0 new sql records. Existing records: 0 outdated fields in 0 objects
+* mySQL: Your records are up to date!
+
+**********************************************************
+      Log Entry: 1:25pm, Wednesday, June 15, 2016
+**********************************************************
+* mySQL connection OK
+* mySQL table records has following column names: (12) id, LastMinuteID, CompanyID, StartTime, EndTime, Description, Remarks, Cost, OriginalCost, InsertDate, Deleted, ReservationURL
+*  XML FILE LOADED. Building XML array,  Records found: 86. 
+*  Retrieve field names from xml: (11) LastMinuteID, CompanyID, StartTime, EndTime, Description, Remarks, Cost, OriginalCost, InsertDate, Deleted, ReservationURL
+*  Constructed xml array with 86 entries, each holding associative array with 11 lines
+* mySQL columns and .xml field names match
+* Record objects construction successful 86 objects created
+* mySQL has found 86 matching database entries.
+* Processed 86 xml records where 86 match LastMinuteID with existing sql rows (0 new entries).
 * xml records expired and set to deleted = 0
 * Mismatch check sql-xml: 0 new sql records. Existing records: 0 outdated fields in 0 objects
 * mySQL: Your records are up to date!
