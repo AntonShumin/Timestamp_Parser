@@ -211,6 +211,10 @@ class DatabaseObject {
         MessageLogger::add_log("xml records expired and set to deleted = ".$count_expired);
     }
     
+    public static function check_expired_sql() {
+        
+    }
+    
     /****************** ***********************
     ********mySQL general fucntions ***********
     ******************* **********************/

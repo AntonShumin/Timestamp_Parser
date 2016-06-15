@@ -12,8 +12,6 @@ class MessageLogger {
     public static function print_log() {
         //check if ran from command line
         $line_break = PHP_SAPI != "cli" ? "<hr/>" : PHP_EOL; //If not cmd. EOL is a cross platform new line
-        
-        
         //generate a string and output
         foreach (self::$log_message as &$log) {
             $log = "* ".$log;
@@ -22,6 +20,7 @@ class MessageLogger {
         //Create header with timestamp
         self::construct_header();
         array_unshift(self::$log_message,PHP_EOL);
+        //Write and display
         self::write_to_file();
         self::clear_log();
     }

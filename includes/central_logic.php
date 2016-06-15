@@ -9,6 +9,7 @@ $check_xml_array = false;
 $check_record_objects = false;
 $check_sync_job = false;
 $check_mismatch = false;
+$check_upload = false;
 
 //Step 1 - mySQL connect
 $database = new MySQLDatabase();
@@ -47,7 +48,12 @@ if($check_sync_job){
 
 //Step 7 - create/update to sql
 if($check_mismatch){
-    Record::upload_sql_records();
+    $check_upload = Record::upload_sql_records();
+}
+
+//Step 8 (1.1) - check existing sql records for expired date
+if($check_upload) {
+    Record::check_expired_sql();
 }
 
 //Log Progress
