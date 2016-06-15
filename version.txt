@@ -1,7 +1,7 @@
 ******************************
 Version 1.1 created on ...
 ******************************
-- Write log to file
+- Write log to file. Log is now platform independent 
 - Check old sql record for expired date
 - Namespace classes?
 

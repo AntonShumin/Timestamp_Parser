@@ -10,11 +10,14 @@ class MessageLogger {
     }
     
     public static function print_log() {
-        self::write_to_file();
-        foreach (self::$log_message as $log) {
-            echo $log . "<hr/>";
+        //check if ran from command line
+        $line_break = PHP_SAPI != "cli" ? "<hr/>" : PHP_EOL; //If not cmd. EOL is a cross platform new line
+        //generate a string and output
+        foreach (self::$log_message as &$log) {
+            $log = "* ".$log;
+            echo $log . $line_break;
         }
-        
+        self::write_to_file();
         self::clear_log();
     }
     
@@ -23,12 +26,16 @@ class MessageLogger {
     }
     
     public static function write_to_file() {
+        //enable file writing
+        chmod(LOG_FILE,0777);
+        //open log.txt. check config.php for path
         if($handle = fopen(LOG_FILE,'wt')){
-            $write = fwrite($handle,join("\r\n",self::$log_message));
+            //generate output and write to file
+            $write = fwrite($handle,join(PHP_EOL,self::$log_message));
             fclose($handle);
-            self::add_log('Creating an entry in log.txt ('.$write.")");    
+            $write ? self::add_log('Creating an entry in log.txt ('.$write." bytes)") : self::add_log('Could not write to log.txt'); 
         } else {
-            self::add_log('Unable to write to log.txt. Check permissions');     
+            self::add_log('Unable to open log.txt. Check permissions');     
         }
         
     }
