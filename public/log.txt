@@ -1,65 +1,17 @@
 
-
-* **********************************************************
-*       Log Entry: 1:09pm, Wednesday, June 15, 2016
-* **********************************************************
-* mySQL connection OK
-* mySQL table records has following column names: (12) id, LastMinuteID, CompanyID, StartTime, EndTime, Description, Remarks, Cost, OriginalCost, InsertDate, Deleted, ReservationURL
-*  XML FILE LOADED. Building XML array,  Records found: 86. 
-*  Retrieve field names from xml: (11) LastMinuteID, CompanyID, StartTime, EndTime, Description, Remarks, Cost, OriginalCost, InsertDate, Deleted, ReservationURL
-*  Constructed xml array with 86 entries, each holding associative array with 11 lines
-* mySQL columns and .xml field names match
-* Record objects construction successful 86 objects created
-* mySQL has found 86 matching database entries.
-* Processed 86 xml records where 86 match LastMinuteID with existing sql rows (0 new entries).
-* xml records expired and set to deleted = 0
-* Mismatch check sql-xml: 0 new sql records. Existing records: 0 outdated fields in 0 objects
-* mySQL: Your records are up to date!
-
-* **********************************************************
-*       Log Entry: 1:09pm, Wednesday, June 15, 2016
-* **********************************************************
-* mySQL connection OK
-* mySQL table records has following column names: (12) id, LastMinuteID, CompanyID, StartTime, EndTime, Description, Remarks, Cost, OriginalCost, InsertDate, Deleted, ReservationURL
-*  XML FILE LOADED. Building XML array,  Records found: 86. 
-*  Retrieve field names from xml: (11) LastMinuteID, CompanyID, StartTime, EndTime, Description, Remarks, Cost, OriginalCost, InsertDate, Deleted, ReservationURL
-*  Constructed xml array with 86 entries, each holding associative array with 11 lines
-* mySQL columns and .xml field names match
-* Record objects construction successful 86 objects created
-* mySQL has found 86 matching database entries.
-* Processed 86 xml records where 86 match LastMinuteID with existing sql rows (0 new entries).
-* xml records expired and set to deleted = 0
-* Mismatch check sql-xml: 0 new sql records. Existing records: 0 outdated fields in 0 objects
-* mySQL: Your records are up to date!
-
 **********************************************************
-      Log Entry: 1:25pm, Wednesday, June 15, 2016
+      Log Entry: 7:50pm, Wednesday, June 15, 2016
 **********************************************************
 * mySQL connection OK
 * mySQL table records has following column names: (12) id, LastMinuteID, CompanyID, StartTime, EndTime, Description, Remarks, Cost, OriginalCost, InsertDate, Deleted, ReservationURL
-*  XML FILE LOADED. Building XML array,  Records found: 86. 
+*  XML FILE LOADED. Building XML array,  Records found: 81. 
 *  Retrieve field names from xml: (11) LastMinuteID, CompanyID, StartTime, EndTime, Description, Remarks, Cost, OriginalCost, InsertDate, Deleted, ReservationURL
-*  Constructed xml array with 86 entries, each holding associative array with 11 lines
+*  Constructed xml array with 81 entries, each holding associative array with 11 lines
 * mySQL columns and .xml field names match
-* Record objects construction successful 86 objects created
-* mySQL has found 86 matching database entries.
-* Processed 86 xml records where 86 match LastMinuteID with existing sql rows (0 new entries).
+* Record objects construction successful 81 objects created
+* mySQL has found 81 matching database entries.
+* Processed 81 xml records where 81 match LastMinuteID with existing sql rows (0 new entries).
 * xml records expired and set to deleted = 0
-* Mismatch check sql-xml: 0 new sql records. Existing records: 0 outdated fields in 0 objects
-* mySQL: Your records are up to date!
-
-**********************************************************
-      Log Entry: 2:19pm, Wednesday, June 15, 2016
-**********************************************************
-* mySQL connection OK
-* mySQL table records has following column names: (12) id, LastMinuteID, CompanyID, StartTime, EndTime, Description, Remarks, Cost, OriginalCost, InsertDate, Deleted, ReservationURL
-*  XML FILE LOADED. Building XML array,  Records found: 85. 
-*  Retrieve field names from xml: (11) LastMinuteID, CompanyID, StartTime, EndTime, Description, Remarks, Cost, OriginalCost, InsertDate, Deleted, ReservationURL
-*  Constructed xml array with 85 entries, each holding associative array with 11 lines
-* mySQL columns and .xml field names match
-* Record objects construction successful 85 objects created
-* mySQL has found 85 matching database entries.
-* Processed 85 xml records where 85 match LastMinuteID with existing sql rows (0 new entries).
-* xml records expired and set to deleted = 0
-* Mismatch check sql-xml: 0 new sql records. Existing records: 0 outdated fields in 0 objects
-* mySQL: Your records are up to date!
+* Mismatch check sql-xml. Existing records: 55 outdated fields in 55 objects. 0 new sql records. 
+* Query mySQL records table with 0 new rows and updated 55 records.
+* mySQL cleanup: found 0 records marked 'not deleted' (+55 ignored from .xml result). 0 records are expired and updated to sql.

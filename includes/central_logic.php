@@ -23,7 +23,7 @@ if($check_mySQL) {
 //Step 3 - read .xml
 if($check_field_construct) {
     $xml_reader = new XMLRead();
-    $check_xml_array = $xml_reader->readXML(X_TESTFILE);
+    $check_xml_array = $xml_reader->readXML(X_TESTFILE); //X_TESTFILE is a constant holding resengo url or the local .xml file. See config.php
 }
 
 //Step 4 - populate record objects

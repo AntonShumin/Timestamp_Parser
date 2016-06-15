@@ -98,7 +98,7 @@ class DatabaseObject {
                 if($object->mark_for_update) $count_mismatched_objects++;
             } 
         }
-        MessageLogger::add_log("Mismatch check sql-xml: ".$count_empty." new sql records. Existing records: ".$count_mismatched_records." outdated fields in ".$count_mismatched_objects." objects");
+        MessageLogger::add_log("Mismatch check sql-xml. Existing records: ".$count_mismatched_records." outdated fields in ".$count_mismatched_objects." objects. ".$count_empty." new sql records. ");
         return true;
     }
 
@@ -202,7 +202,7 @@ class DatabaseObject {
         
     }
     
-    //STEP 5-EXTRA Date checker
+    //STEP: 5-EXTRA Date checker
     public static function date_checker(){
         $count_expired = 0;
         foreach(Record::$object_collection as $object) {
@@ -211,9 +211,52 @@ class DatabaseObject {
         MessageLogger::add_log("xml records expired and set to deleted = ".$count_expired);
     }
     
+    //Step 8: check relevant expired mySQL records
     public static function check_expired_sql() {
-        
+        //Prepare vars
+        $already_processed = [];
+        $count_excluded = 0;
+        //sql column names
+        $sync_key = static::$sync_key; 
+        $sync_deleted = static::$sync_deleted;
+        $sync_date = static::$sync_date_start;
+        //construct exclude array from already processed xml objects
+        foreach(Record::$object_collection as $object) {
+            if($object->xml_fields_values[$sync_deleted] == 'False') {
+                $already_processed[] = $object->xml_fields_values[$sync_key];
+                $count_excluded++;
+            }
+        }
+        //construct query, exclude objects already in memory (date check already done)
+        $query = "SELECT id,".$sync_deleted.",".$sync_date;
+        $query .= " FROM ".static::$table_name." WHERE ";
+        if($count_excluded > 0) {
+           $query .= $sync_key." NOT IN (".join(",",$already_processed).") AND "; 
+        }
+        $query .= $sync_deleted." = 'False'";
+        $result_array = static::find_by_sql($query);
+        //build object pool
+        $new_objects = [];
+        $count_marked = count($result_array);
+        $count_expired = 0;
+        foreach($result_array as $sql_object) {
+            $new_obj = new static;
+            $new_objects[] = $new_obj;
+            $new_obj->id = $sql_object["id"];
+            //Using xml fields as placeholders and they already have methods for date check
+            $new_obj->xml_fields_values[$sync_deleted] = $sql_object[$sync_deleted];
+            $new_obj->xml_fields_values[$sync_date] = $sql_object[$sync_date];
+            if( $new_obj->check_date() ) {
+                $new_obj->xml_fields_values[$sync_deleted] = "True";
+                $count_expired++;
+                $new_obj->mismatch_fields_values = $new_obj->xml_fields_values;
+                $new_obj->update();
+            }
+        }
+         MessageLogger::add_log("mySQL cleanup: found {$count_marked} records marked 'not deleted' (+{$count_excluded} ignored from .xml result). {$count_expired} records are expired and updated to sql.");
     }
+    
+    //I should probably move most of the static classes above to a separate class and make 1 instance. Brain.php
     
     /****************** ***********************
     ********mySQL general fucntions ***********
