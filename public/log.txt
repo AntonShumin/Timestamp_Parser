@@ -1,0 +1,17 @@
+
+**********************************************************
+      Log Entry: 7:50pm, Wednesday, June 15, 2016
+**********************************************************
+* mySQL connection OK
+* mySQL table records has following column names: (12) id, LastMinuteID, CompanyID, StartTime, EndTime, Description, Remarks, Cost, OriginalCost, InsertDate, Deleted, ReservationURL
+*  XML FILE LOADED. Building XML array,  Records found: 81. 
+*  Retrieve field names from xml: (11) LastMinuteID, CompanyID, StartTime, EndTime, Description, Remarks, Cost, OriginalCost, InsertDate, Deleted, ReservationURL
+*  Constructed xml array with 81 entries, each holding associative array with 11 lines
+* mySQL columns and .xml field names match
+* Record objects construction successful 81 objects created
+* mySQL has found 81 matching database entries.
+* Processed 81 xml records where 81 match LastMinuteID with existing sql rows (0 new entries).
+* xml records expired and set to deleted = 0
+* Mismatch check sql-xml. Existing records: 2 outdated fields in 1 objects. 0 new sql records. 
+* Query mySQL records table with 0 new rows and updated 1 records.
+* mySQL cleanup: found 0 records marked 'not deleted' (+54 ignored from .xml result). 0 records are expired and updated to sql.

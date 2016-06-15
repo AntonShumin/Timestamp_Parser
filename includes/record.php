@@ -3,7 +3,7 @@
 require_once("database_object.php");
 require_once("logger.php");
 
-//DatabaseObject is a class indepandant record processor 
+//DatabaseObject holds general purpose object methods (update, create objects)
 class Record extends DatabaseObject {
     
     //matches mySQL table name
@@ -26,7 +26,7 @@ class Record extends DatabaseObject {
     
     //Synchronizing key between xml and mySQL
     protected static $sync_key;
-    protected static $syn_date_start;
+    protected static $sync_date_start;
     protected static $sync_date_end;
     protected static $sync_deleted;
     
@@ -34,13 +34,13 @@ class Record extends DatabaseObject {
     //sync values are class specific, matching keys for xml and mysql
     public static function sync_vars() {
         self::$sync_key = self::$db_fields[1];
-        self::$syn_date_start = self::$db_fields[3];
+        self::$sync_date_start = self::$db_fields[3];
         self::$sync_date_end = self::$db_fields[4];
         self::$sync_deleted = self::$db_fields[10];
     }
 
     public function check_date() {
-        $var_date = $this->xml_fields_values[self::$sync_date_end];
+        $var_date = $this->xml_fields_values[self::$sync_date_start];
         $var_deleted = $this->xml_fields_values[self::$sync_deleted];
         
         $var_date_converted = strtotime($var_date);
@@ -48,6 +48,7 @@ class Record extends DatabaseObject {
         $time_now = $date->getTimestamp();
         
         if($time_now > $var_date_converted && $var_deleted == "False") {
+            print_r($this->xml_fields_values); echo "<hr/>";
             $this->xml_fields_values[self::$sync_deleted] = "True";
             return 1;
         }
